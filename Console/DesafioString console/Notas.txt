@@ -1,0 +1,10 @@
+////
+---Comentario
+Identidad en sql server quiere decir que hay incremento de registro automatico 
+--- Observaciones 
+
++Para el uso de wpf .net 5 se tiene que pasar el proyecto directmente a la net 6 y hacer una compilacion para que se refresque el proyecto 
+
++Para .net windows propiamente se tiene que usar la version estandar 4.7.2
+
+Data Source=DESKTOP-LB8S5VF\SQLEXPRESS;Integrated Security=True

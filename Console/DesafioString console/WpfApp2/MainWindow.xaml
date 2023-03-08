@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" Margin="20">Hola Mundo</TextBlock>
+        <ListBox Height="100" Width="100">
+            <ListBoxItem Content="Item 1"/>
+            <ListBoxItem Content="Item 2"/>
+            <ListBoxItem Content="Item 3"/>
+            <ListBoxItem Content="Item 4"/>
+        </ListBox>
+        <Button Content="Clic aquí" Margin="20" Click="onClickA"></Button>
+        <Button Click="Button_Click" Content="Aceptar" PreviewMouseUp="Button_PreviewMouseUp" Margin="20" ></Button>
+        <Button Click="Button_Click" MouseUp="Button_MouseUp"  Content="Aceptar"  Margin="20" ></Button>
+        <Button Click="Button_Click" Content="Aceptar"  PreviewMouseLeftButtonDown="Button_PreviewMouseLeftButtonDown" Margin="20" ></Button>
+        <Button Click="Button_Click" Content="Aceptar"  PreviewMouseRightButtonUp="Button_PreviewMouseRightButtonUp" Margin="20" ></Button>
+
+        <Button Width="250" Height="150" Margin="20" Click="Button_Click_1" >
+            <Button Width="150" Height="50" Content="Hola" PreviewMouseLeftButtonDown="Button_PreviewMouseLeftButtonDown_1"/>
+        </Button>
+    </StackPanel>
+</Window>

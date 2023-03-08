@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <!--Binding es el enlace que va de salida -->
+        <!--OneWay solo un camino -->
+        <!--TwoWay dos caminos cambiando el valor y deslizando la barra -->
+        <!--OneWaySource solo un camino(destino a origen) -->
+        <!--OneTime solo un camino -->
+        <TextBox Width="100" Margin="50" Text="{Binding ElementName=MiSlider,Path=Value,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Name="MiTxtBlock" />
+        <Slider Minimum="0" Maximum="100" Name="MiSlider" IsSnapToTickEnabled="True"/>
+    </StackPanel>
+</Window>

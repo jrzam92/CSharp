@@ -1,0 +1,17 @@
+﻿<Window x:Class="wpf12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label>Nombre de usuario</Label>
+        <TextBox Name="tbUsername"/>
+        <Label>Clave</Label>
+        <!--Se le puede poner caracter para que pueda ser mas personalizable esta seccion-->
+            <PasswordBox PasswordChar="*"/>
+        <Button Margin="5" Content="Ingresar" Click="Button_Click"/>
+    </StackPanel>
+</Window>
